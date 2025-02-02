@@ -12,5 +12,5 @@ Une application Python pour créer et surveiller des alertes de cryptomonnaies.
 
 1. Clone le dépôt :
    ```bash
-   git clone https://github.com/ton_utilisateur/crypto-alerts.git
-   cd crypto-alerts
+   git clone https://github.com/ChaibaAnfal/intuition-test.git
+   cd intuition-env
