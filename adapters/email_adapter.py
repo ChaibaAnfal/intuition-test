@@ -1,15 +1,25 @@
+# adapters/email_adapter.py
 import smtplib
+from email.mime.text import MIMEText
 
 class EmailAdapter:
-    def __init__(self, smtp_server, smtp_port, email, password):
-        self.smtp_server = smtp_server
-        self.smtp_port = smtp_port
+    def __init__(self, email, password):
+        """
+        Initialise l'adaptateur email avec l'adresse email et le mot de passe.
+        """
         self.email = email
         self.password = password
 
     def send_email(self, to_email, subject, body):
-        message = f"Subject: {subject}\n\n{body}"
-        with smtplib.SMTP(self.smtp_server, self.smtp_port) as server:
+        """
+        Envoie un email.
+        """
+        msg = MIMEText(body)
+        msg["Subject"] = subject
+        msg["From"] = self.email
+        msg["To"] = to_email
+
+        with smtplib.SMTP("smtp.gmail.com", 587) as server:
             server.starttls()
             server.login(self.email, self.password)
-            server.sendmail(self.email, to_email, message)
+            server.sendmail(self.email, to_email, msg.as_string())

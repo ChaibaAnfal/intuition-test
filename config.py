@@ -3,5 +3,5 @@ DATABASE_PATH = "crypto_alerts.db"
 
 EMAIL_CONFIG = {
     "from_email": "anfalchaiba8@gmail.com",  # Remplace par ton adresse email
-    "password": "Mikasa12345",       # Remplace par ton mot de passe
+    "password": "gyyn lmis zdci xbjt",       # Remplace par ton mot de passe
 }
