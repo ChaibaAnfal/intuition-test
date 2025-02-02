@@ -1,16 +1,16 @@
 # Intuition Technical Test
 
-Ce projet est une application Python pour gérer des alertes sur les cryptomonnaies en utilisant l'API CoinAPI.
+Une application Python pour créer et surveiller des alertes de cryptomonnaies.
 
 ## Fonctionnalités
 
-- Créer, lister et vérifier des alertes pour les cryptomonnaies.
-- Support du Bitcoin (BTC) et d'autres cryptomonnaies.
-- Utilisation d'un cache pour optimiser les requêtes API.
+- **Inscription et Connexion** : `sign-up`, `login`.
+- **Gestion des Alertes** : `create-alert`, `list-alerts`, `update-alert`, `delete-alert`.
+- **Surveillance** : Vérifie les alertes et envoie des emails.
 
-## Comment exécuter
+## Utilisation
 
-1. Clone ce dépôt.
-2. Installe les dépendances :
+1. Clone le dépôt :
    ```bash
-   pip install requests
+   git clone https://github.com/ton_utilisateur/crypto-alerts.git
+   cd crypto-alerts
